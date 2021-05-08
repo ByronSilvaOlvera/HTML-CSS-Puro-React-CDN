@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Burbujas</title>
+	<link rel="stylesheet" href="burbu.css">
+</head>
+<body>
+	<section>
+		<h2>Bubbles</h2>
+	</section>
+	<script>
+		function createBubble() {
+			const section = document.querySelector('section');
+			const createElement =document.createElement('span');
+			var size = Math.random() * 60;
+
+			createElement.style.width = 50 + size + 'px';
+			createElement.style.height = 50 + size + 'px';
+			createElement.style.left = Math.random() * innerWidth + 'px';
+			section.appendChild(createElement);
+			setTimeout( () => {
+				createElement.remove();
+			}, 4000);
+		}
+
+		setInterval(createBubble, 50);
+
+	</script>
+</body>
+</html>

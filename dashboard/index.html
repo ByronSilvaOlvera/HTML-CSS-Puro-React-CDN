@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css">
+    <title>Dash</title>
+</head>
+<body>
+    <div class="flex-container rt">
+        <!-- <div class="lado-izquierdo rt" xyz="fade-25% left-1" id="menuCierre" > -->
+            
+            <!-- <div id="rootleft"  class="rt"></div> -->
+           
+    </div>
+
+
+    
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="ItemMenu.js"></script>
+    <script type="text/babel" src="ItemMenuTitulo.js"></script>
+    <script type="text/babel" src="Welcome.js"></script>
+    <script type="text/babel" src="MenuData.js"></script>
+    <script type="text/babel" src="BodyDerecho.js"></script>
+    <script src="comu.js"></script>
+
+    <script type="text/babel" >
+        ReactDOM.render(
+            <React.StrictMode>
+            <Welcome key='4' titulo="Menu" />
+            <LadoDerecho key='1' titulo="Menu" />
+            </React.StrictMode>,
+            document.querySelector('.rt'))
+    </script>
+</body>
+</html>

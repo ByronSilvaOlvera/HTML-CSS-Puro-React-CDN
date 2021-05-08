@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*=col-] {
+    width: 100%;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .lado-izquierdo {
+  background-color: #ff5722;
+  height: 100vh;
+}
+.flex-container .lado-derecho {
+  width: 100%;
+  background-color: #f0d7cf;
+  padding: 15px;
+  height: 100vh;
+}
+
+.titulo-box {
+  margin: auto;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+.titulo-box .titulo-box-1 {
+  width: 80%;
+  color: #f8c7b8;
+  margin: auto;
+}
+.titulo-box .titulo-box-2 {
+  display: flex;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+}
+.titulo-box .titulo-box-2 div {
+  display: flex;
+  margin: auto;
+  padding-inline: 7px;
+}
+.titulo-box .titulo-box-2 span {
+  margin: auto;
+  color: #f8c7b8;
+  font-size: 30px;
+}
+
+.titulo-box-2 > div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  color: #201111;
+}
+
+.menu-box {
+  height: 45px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+.menu-box .menu-box-1 {
+  width: 80%;
+  color: #f8c7b8;
+  text-align: left;
+  font-size: 13px;
+}
+.menu-box .menu-box-1 h2 {
+  padding: 8px;
+}
+.menu-box .menu-box-2 {
+  display: flex;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+}
+.menu-box .menu-box-2 div span {
+  font-size: 28px;
+}
+.menu-box .menu-box-2 div {
+  display: flex;
+  margin: auto;
+  padding-inline: 7px;
+}
+.menu-box .menu-box-2 span {
+  margin: auto;
+  color: #f8c7b8;
+}
+
+.openMenu {
+  animation-name: openAnimacion;
+  animation-duration: 2s;
+  width: 25%;
+}
+
+@keyframes openAnimacion {
+  0% {
+    width: 8%;
+    color: #ff5722;
+  }
+  100% {
+    width: 25%;
+    color: #f8c7b8;
+  }
+}
+@keyframes cierreAnimacion {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 8%;
+  }
+}
+.closeMenu {
+  width: 8%;
+  animation-name: cierreAnimacion;
+  animation-duration: 2s;
+}
+
+/*# sourceMappingURL=styles.css.map */
