@@ -22,10 +22,6 @@ class ItemMenu extends React.Component{
     
 
     render(){
-        
-        let clasSel = this.state.estado 
-            ? 'linea-menu-item linea-menu-item-animacion' 
-            : 'linea-menu-item ' ;
 
         return(
             <div className="menu-box xyz-in">  
