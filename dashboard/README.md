@@ -16,7 +16,7 @@ para agregar un compenente de esa forma de clase
 ### Componente de funcion
     en tramite
 
-El codigo para renderizar los componente, se debe esta declara los compoenete de clase primero para luego ser renderidazos:
+El codigo para renderizar los componente, se debe esta declara los compoenete de clase primero para luego ser renderidazos, el codigo de abajo esa la manera que funciona.
 
     <script type="text/babel" >
         ReactDOM.render(

@@ -142,6 +142,55 @@
   color: #f8c7b8;
 }
 
+.linea-menu-item {
+  position: absolute;
+}
+
+.linea-menu-item-animacion {
+  margin: 39px 0 0 57px;
+  width: 50%;
+  border-bottom: 5px solid red;
+  animation-name: lineaAnimacion;
+  animation-duration: 2s;
+}
+
+@keyframes lineaAnimacion {
+  0% {
+    width: 8px;
+  }
+  15% {
+    width: 15px;
+  }
+  50% {
+    width: 30px;
+    color: white;
+  }
+  80% {
+    width: 60px;
+  }
+  90% {
+    width: 70px;
+  }
+  100% {
+    width: 140px;
+    border-bottom: 3px solid #f54009;
+  }
+}
+.menu-box-1:hover {
+  color: white;
+}
+.menu-box-1:hover span {
+  color: #f54009;
+}
+.menu-box-1:hover .linea-menu-item {
+  border-bottom: 3px solid #f8c7b8;
+  width: 50%;
+  margin: 3px 0 0 7px;
+  animation-name: lineaAnimacion;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
 .openMenu {
   animation-name: openAnimacion;
   animation-duration: 2s;
