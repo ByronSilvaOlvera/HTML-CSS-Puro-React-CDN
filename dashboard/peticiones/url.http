@@ -1,0 +1,8 @@
+
+
+GET https://jsonplaceholder.typicode.com/photos?id=1
+
+####
+GET https://reqres.in/api/users?page=2
+
+####

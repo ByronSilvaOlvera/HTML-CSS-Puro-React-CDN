@@ -19,7 +19,7 @@ class ItemMenu extends React.Component{
            estado : !state.estado
         }));
 
-        this.state.estado ? console.log('encima') : console.log('sali');  
+        //this.state.estado ? console.log('encima') : console.log('sali');  
         this.state.divStyle =  !this.state.estado 
             ? {} 
             : { color : 'rgb(255, 255, 255)' } ;
