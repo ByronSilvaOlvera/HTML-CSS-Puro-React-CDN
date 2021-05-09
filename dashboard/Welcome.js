@@ -46,10 +46,10 @@ class MenuData extends React.Component{
                 </div>
                 
                     <div xyz="fade-25% left-1" >
-                        <ItemMenu menu='Compras' icon='shopping_cart'  />
-                        <ItemMenu menu='Almacenes' icon='sd_storage' />
-                        <ItemMenu menu='Favorito'  icon='favorite'/>
-                        <ItemMenu menu='Tarjeta' icon='credit_card' />
+                        <ItemMenu menu='Compras' icon='shopping_cart' idnum="1" />
+                        <ItemMenu menu='Almacenes' icon='sd_storage' idnum="2" />
+                        <ItemMenu menu='Favorito'  icon='favorite' idnum="3"/>
+                        <ItemMenu menu='Tarjeta' icon='credit_card' idnum="4" />
                     </div>
                 
             </div>
