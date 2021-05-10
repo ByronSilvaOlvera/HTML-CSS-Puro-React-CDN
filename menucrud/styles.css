@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container-index {
+  display: flex;
+}
+.container-index .nav-lateral-izq {
+  width: 30%;
+  height: 100%;
+  border: 2px solid green;
+  padding: 15px;
+}
+.container-index .nav-lateral-izq .nav-menu {
+  border: 2px solid #0e0bd1;
+}
+.container-index .nav-lateral-izq .nav-menu .nav-header {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ee082e;
+  height: 80px;
+  text-align: center;
+}
+.container-index .nav-lateral-izq .nav-menu .nav-opciones {
+  margin: 20px;
+  border: 2px solid #999909;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-index .nav-lateral-izq .nav-menu .nav-opciones .nav-op-add {
+  width: 90px;
+  height: 90px;
+  margin: 12px 0 12px 0;
+  border-radius: 20px;
+  border: 2px solid orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #251025;
+}
+.container-index .nav-lateral-izq .nav-menu .nav-opciones .nav-op-add span {
+  font-size: 40px;
+  color: orangered;
+}
+.container-index .nav-lateral-der {
+  width: 70%;
+  height: 100vh;
+  border: 2px solid orange;
+}
+
+/*# sourceMappingURL=styles.css.map */

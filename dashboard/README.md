@@ -26,3 +26,19 @@ El codigo para renderizar los componente, se debe esta declara los compoenete de
             </React.StrictMode>,
             document.querySelector('.rt'))
     </script>
+
+
+evento en react mouse encima y salida
+
+        onMouseEnter={this.handleClick}
+        onMouseLeave={this.handleClick}
+
+ciclo de vida react
+
+        componentDidMount() { }
+
+
+peticiones 
+
+        fetch('https://jsonplaceholder.typicode.com/photos?id=20')
+        .then().then()
