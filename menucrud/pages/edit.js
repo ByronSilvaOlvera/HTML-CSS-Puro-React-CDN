@@ -1,6 +1,6 @@
 
 
-class ItemMenu extends React.Component{ 
+class Edit extends React.Component{ 
     render(){
         return(
             <div>

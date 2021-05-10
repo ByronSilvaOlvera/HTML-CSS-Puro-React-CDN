@@ -1,5 +1,5 @@
 
-class ItemMenu extends React.Component{ 
+class Get extends React.Component{ 
     render(){
         return(
             <div>
