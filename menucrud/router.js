@@ -2,7 +2,7 @@
 
 class Rutas extends React.Component{
     render(){
-        return(
+        return(            
             <div>
                 Estamos listos
             </div>
