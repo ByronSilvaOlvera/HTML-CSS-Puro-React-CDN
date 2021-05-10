@@ -55,11 +55,22 @@
             
             </div>
         </div>
-        <div class="nav-lateral-der">
+        <div class="nav-lateral-der rt">
             sdsdsddsd
         </div>
     </div>
-    
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="router.js"></script>
+
+
+    <script type="text/babel" >
+        ReactDOM.render(
+           <Rutas />,
+            document.querySelector('.rt'))
+    </script>
 
 </body>
 </html>
