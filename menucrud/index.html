@@ -11,9 +11,9 @@
     
 </head>
 <body>
-    <div class="container-index" > 
-        <div class="nav-lateral-izq">
-            <div class="nav-menu" >
+    <div class="container-index rt" > 
+        <!-- <div class="nav-lateral-izq">
+            <div class="nav-menu" > -->
                
 
 
@@ -51,11 +51,11 @@
 
                </div> -->
             
-            </div>
+            <!-- </div>
         </div>
         <div class="nav-lateral-der rt">
             sdsdsddsd
-        </div>
+        </div> -->
     </div>
     
     <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
@@ -68,6 +68,11 @@
     <script type="text/babel" src="pages/add.js"></script>
     <script type="text/babel" src="pages/edit.js"></script>
     <script type="text/babel" src="pages/get.js"></script>
+    <script type="text/babel" src="pages/Delete.js"></script>
+    <script type="text/babel" src="pages/List.js"></script>
+
+    <script type="text/babel" src="Nav.js"></script>
+    <script type="text/babel" src="Contenido.js"></script>
 
     <script type="text/babel" src="router.js"></script>
 
@@ -75,14 +80,13 @@
 
     <script type="text/babel" >
         ReactDOM.render(
-           <Rutas />,
+           <ReactRouterDOM.HashRouter>
+                <NavLateral />
+                <Contenido />
+            </ReactRouterDOM.HashRouter>,
             document.querySelector('.rt'))
     </script>
-    <script type="text/babel" >
-        ReactDOM.render(
-           <RutasMenu />,
-            document.querySelector('.nav-menu'))
-    </script>
+    
 
 </body>
 </html>
