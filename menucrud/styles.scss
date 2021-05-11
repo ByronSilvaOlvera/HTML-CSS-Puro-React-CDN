@@ -35,9 +35,13 @@ $titulo-menu: #00994c;
                 color: $titulo-menu;
 
                 //border: 2px solid rgb(238, 8, 46);
-
+               
                 height: 60px;
                 text-align: center;
+                h2{
+                    font-size: 25px;
+                    margin: 1px;
+                }
                 span{
                     margin: 0 8px 0 8px;
                 }
@@ -82,8 +86,9 @@ $titulo-menu: #00994c;
     .nav-lateral-der{
         width  : 70%;
         height : 100vh;
-        //border : 2px solid orange;
-        padding: 10px;
+        //border : 4px solid orange;
+
+        padding: 20px;
     }
 
     
@@ -94,4 +99,8 @@ $titulo-menu: #00994c;
 .nav-op-add-id:hover {
     color: rgb(255, 255, 255);
     background-color: royalblue;
+}
+
+.lista-box{
+    margin: 10px;
 }

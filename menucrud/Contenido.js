@@ -1,7 +1,7 @@
 const Route = ReactRouterDOM.Route;
 
 const Contenido = () =>(
-    <div class="nav-lateral-der">
+    <div className="nav-lateral-der">
         <Route path="/add" exact component={Add} />
         <Route path="/edit" component={Edit} />
         <Route path="/get" component={Get} />    

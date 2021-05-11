@@ -6,58 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">  
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
     <title>CRUD</title>
-
+    
     
 </head>
 <body>
     <div class="container-index rt" > 
-        <!-- <div class="nav-lateral-izq">
-            <div class="nav-menu" > -->
-               
-
-
-               <!-- <div class="nav-opciones">
-
-                    <div class="nav-op-add" id="nav-op-add-id" >
-                        <span class="material-icons-sharp">
-                            view_list
-                        </span>
-                    </div>
-
-                    <div class="nav-op-add" >
-                        <span class="material-icons">
-                            add_circle_outline
-                        </span>
-                    </div>
-
-                    <div class="nav-op-add" >
-                        <span class="material-icons-sharp">
-                            drive_file_rename_outline
-                            </span>
-                    </div>
-
-                    <div class="nav-op-add" >
-                        <span class="material-icons-sharp">
-                            get_app
-                            </span>
-                    </div>
-
-                    <div class="nav-op-add" >
-                        <span class="material-icons-sharp">
-                            delete_outline
-                            </span>
-                    </div>
-
-               </div> -->
-            
-            <!-- </div>
-        </div>
-        <div class="nav-lateral-der rt">
-            sdsdsddsd
-        </div> -->
+    
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
     <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -75,18 +39,19 @@
     <script type="text/babel" src="Contenido.js"></script>
 
     <script type="text/babel" src="router.js"></script>
-
-
-
+    
+    
+    
     <script type="text/babel" >
         ReactDOM.render(
-           <ReactRouterDOM.HashRouter>
+            <ReactRouterDOM.HashRouter>
                 <NavLateral />
                 <Contenido />
-            </ReactRouterDOM.HashRouter>,
-            document.querySelector('.rt'))
+                </ReactRouterDOM.HashRouter>,
+                document.querySelector('.rt'))
     </script>
-    
+    <script  src="comun.js"></script>
+ 
 
 </body>
 </html>
