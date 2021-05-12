@@ -4,10 +4,20 @@ class Add extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {value: ''};        
+        this.state = {show: false};       
+        this.mostrarModal = this.mostrarModal.bind(this); 
+    }
+
+    mostrarModal(){
+        this.setState(state => ({      
+            show: !state.show    
+        })) 
     }
 
     render(){
+
+        
+
         return(
             <div>
                 <form>
@@ -31,12 +41,19 @@ class Add extends React.Component{
                         <input id="fechaoff" type="text" class="datepicker" />
                         <label for="fechaoff">Fecha Culmina</label>
                     </div>
-                    
+
                     <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                     </button>
 
                 </form>
+                    <button class="btn waves-effect waves-light btn-large" 
+                    type="submit" name="action" 
+                         onclick={this.mostrarModal} >
+                        Modal
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <Modal show={this.state.show} />
             </div>
         );
     }

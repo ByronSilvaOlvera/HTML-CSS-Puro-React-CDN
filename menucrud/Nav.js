@@ -1,60 +1,107 @@
 
-const Link = ReactRouterDOM.Link;
+// const dataMenu = ()=>  (
+//     [
+//         {icono : 'view_list'},
+//         {icono : 'add_circle_outline'},
+//         {icono : 'drive_file_rename_outline'}, 
+//         {icono : 'get_app'},
+//         {icono : 'delete_outline'},
+//     ]
+//)
 
 
-const NavLateral = () =>(
-    <div class="nav-lateral-izq">
-        <div class="nav-menu" >
-            <div class="nav-header" >
-                <h2>CRUD</h2>
-                <span class="material-icons-sharp">
-                    dashboard_customize
-                </span>
+
+class NavLateral extends React.Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            Link : ReactRouterDOM.Link,
+            estado : true,
+            divStyle : {
+                color: 'write',
+            },
+            dataMenu : [
+                {icono : 'view_list',to:'/list'},
+                {icono : 'add_circle_outline',to:'/add'},
+                {icono : 'drive_file_rename_outline',to:'/edit'}, 
+                {icono : 'get_app',to:'/get'},
+                {icono : 'delete_outline',to:'/delete'},
+            ]
+        }
+        this.handleHover = this.handleHover.bind(this);
+    }
+    
+    handleHover() {    
+        this.setState(state => ({      
+            estado : !state.estado
+         }));
+         this.state.divStyle =  !this.state.estado 
+             ? {} 
+             : { color : 'rgb(255, 255, 255)' } ;
+        console.log('estado');
+    }
+
+    render(){
+        return (
+            <div className="nav-lateral-izq">
+                <div className="nav-menu" >
+                    <div className="nav-header" >
+                        <h2>CRUD</h2>
+                        <span className="material-icons-sharp">
+                            dashboard_customize
+                        </span>
+                    </div>
+                    <div className="nav-opciones">
+                        {
+
+                        this.state.dataMenu.map(
+                            el => <NavOpcion icono={el.icono} to={el.to} />
+                        )
+
+                        }
+                    
+                    </div> 
+                
+                </div>
             </div>
-            <div class="nav-opciones">
+        )
+    }
+}
 
-                <div class="nav-op-add" id="nav-op-add-id" >
-                    <Link to="/list">
-                        <span class="material-icons-sharp">
-                            view_list
-                        </span>
-                    </Link>
-                </div>
+class NavOpcion extends React.Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            Link : ReactRouterDOM.Link,
+            estado : true,
+            divStyle : {
+                color: 'write',
+            }
+        }
+        this.handleHover = this.handleHover.bind(this);
+    }
+    
+    handleHover() {    
+        this.setState(state => ({      
+            estado : !state.estado
+         }));
+         this.state.divStyle =  !this.state.estado 
+             ? {} 
+             : { color : 'rgb(255, 255, 255)' } ;
+        console.log('estado');
+    }
 
-                <div class="nav-op-add" >
-                    <Link to="/add">
-                        <span class="material-icons">
-                            add_circle_outline
-                        </span>
-                    </Link>
-                </div>
-
-                <div class="nav-op-add" >
-                    <Link to="/edit">
-                        <span class="material-icons-sharp">
-                            drive_file_rename_outline
-                        </span>
-                    </Link>
-                </div>
-
-                <div class="nav-op-add" >
-                    <Link to="/get">
-                        <span class="material-icons-sharp">
-                            get_app
-                        </span>
-                    </Link>
-                </div>
-
-                <div class="nav-op-add" >
-                    <Link to="/delete">
-                        <span class="material-icons-sharp">
-                            delete_outline
-                        </span>
-                    </Link>
-                </div>
-
-            </div> 
-        
-        </div>
-    </div>
-)
+    render(){
+        return (
+            <div className="nav-op-add" 
+                onMouseEnter={ this.handleHover } 
+                onMouseLeave={ this.handleHover } >
+                <Link to={this.props.to}>
+                    <span className="material-icons-sharp" style={ this.state.divStyle} >
+                        {this.props.icono}
+                    </span>
+                </Link>
+            </div>        
+        )
+    }
+}
