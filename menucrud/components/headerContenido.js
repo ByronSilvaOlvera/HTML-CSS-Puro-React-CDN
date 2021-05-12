@@ -1,17 +1,16 @@
 
 
-class List extends React.Component{ 
-    
-    
-    
+class TituloPage extends React.Component{ 
+
     render(){
-        //GET http://127.0.0.1:8000/tarea/
-        
-
         return(
-            <div>
-                <h2>{ this.props.titulo}</h2>
-
+            <div className="titulo-contenido" >
+                <div className="titulo-name" >
+                    <h4>{ this.props.titulo}</h4> 
+                </div>
+                <div className='titulo-ruta' s>
+                    <h7>{ this.props.opcion }</h7>
+                </div>
             </div>
         )
     }

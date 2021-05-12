@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,9 +62,11 @@
   font-size: 40px;
   color: #00cc65;
 }
-.container-index .nav-lateral-der {
+
+.nav-lateral-der {
   width: 70%;
   height: 100vh;
+  font-family: "Open Sans", "Roboto", "Noto Sans JP", sans-serif;
   padding: 20px;
 }
 
@@ -85,6 +89,29 @@
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+}
+
+.titulo-contenido {
+  background-color: #e4fffe;
+  padding: 10px 0 15px 5px;
+  border-radius: 0 30px 0 30px;
+}
+.titulo-contenido .titulo-name {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.titulo-contenido .titulo-name h4 {
+  font-size: 20px;
+  margin: 0 0 20px 10px;
+}
+.titulo-contenido .titulo-ruta {
+  width: 300px;
+  margin: 0 0 0 20px;
+  padding: 6px 6px 6px 15px;
+  font-size: 12px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #ccffe5;
+  color: #00994c;
 }
 
 /*# sourceMappingURL=styles.css.map */

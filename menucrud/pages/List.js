@@ -25,16 +25,19 @@ class List extends React.Component{
 
     render(){
         return(
-            <div className="lista-box">
-                <ul>
-                {
-                    this.state.data.map( el => 
-                        <li>
-                            Titulo: {el.titulo}. Descripcion: {el.descripcion}. Estado: {el.estado}
-                        </li>    
-                    )
-                }
-                </ul>
+            <div>
+                <TituloPage titulo='Listado de la entidad' opcion='Entidad/listado' />
+                <div className="lista-box">
+                    <ul>
+                    {
+                        this.state.data.map( el => 
+                            <li>
+                                Titulo: {el.titulo}. Descripcion: {el.descripcion}. Estado: {el.estado}
+                            </li>    
+                        )
+                    }
+                    </ul>
+                </div>
             </div>
 
 
