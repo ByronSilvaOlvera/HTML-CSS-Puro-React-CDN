@@ -9,7 +9,7 @@ class List extends React.Component{
     async componentDidMount() { 
         try {
 
-            const response = await fetch('http://127.0.0.1:8000/tarea/');
+            const response = await fetch('http://127.0.0.1:7000/tarea/');
             const json = await response.json();
         
             this.setState(state => ({      

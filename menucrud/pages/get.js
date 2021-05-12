@@ -3,7 +3,10 @@ class Get extends React.Component{
     render(){
         return(
             <div>
-                GET
+                 <TituloPage titulo='Listado de la entidad' opcion='Entidad/listado' />
+                 <div>
+                    GET
+                 </div>
             </div>
         )
     }
