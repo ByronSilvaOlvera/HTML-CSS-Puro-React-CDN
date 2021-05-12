@@ -19,6 +19,8 @@ menu lateral con iconos que consiste en list, add, edit, getOne, delete. agregan
       </ReactRouterDOM.HashRouter>
     )
 
+Separe los link con la ruta en componentes diferentes y la ReactRouterDOM la puse en la parte principal para que no genere error.
+
 ## Rutas
 Se separe link con las <NavLateral/> con rutas <Contenido/> donde estan las rutas del contenido y muestra los componentes dependiendo del link que se elija
 
@@ -34,3 +36,6 @@ scss a css
 
 
 https://www.pluralsight.com/guides/using-react-router-with-cdn-links
+
+## Implemente
+Hover en react consiste una funcion y se cambia el estado cuando el mouse entra y sale de un componente desde css no deja acer hover tiene que ver mucho la libreria de react. 
