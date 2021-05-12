@@ -4,7 +4,7 @@ class FormEntidad extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="form-contenido" >
             <form>
                 <div class="input-field col s4">
                     <i class="material-icons prefix">account_circle</i>

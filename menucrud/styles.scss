@@ -99,8 +99,10 @@ $menu :#ccffe5;
     width  : 70%;
     height : 100vh;
     font-family: 'Open Sans', 'Roboto','Noto Sans JP', sans-serif ;
-
     padding: 20px;
+    margin: 12px 0 0 0;
+    background-color:  #f9fffc;
+    border: 5px solid #effff7 ;
 }
 
 
@@ -154,4 +156,11 @@ $sel : rgb(255, 255, 255);
         color: $icono-fondo;
 
     }
+}
+
+
+.form-contenido{
+    background-color: #f9fffc;
+    margin: 15px 0 0 0;
+    padding: 15px 10px 15px 15px;
 }

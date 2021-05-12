@@ -68,6 +68,9 @@
   height: 100vh;
   font-family: "Open Sans", "Roboto", "Noto Sans JP", sans-serif;
   padding: 20px;
+  margin: 12px 0 0 0;
+  background-color: #f9fffc;
+  border: 5px solid #effff7;
 }
 
 .lista-box {
@@ -112,6 +115,12 @@
   border-radius: 20px 20px 20px 20px;
   background-color: #ccffe5;
   color: #00994c;
+}
+
+.form-contenido {
+  background-color: #f9fffc;
+  margin: 15px 0 0 0;
+  padding: 15px 10px 15px 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
