@@ -4,7 +4,9 @@ const Contenido = () =>(
     <div className="nav-lateral-der">
         <div className="header-contenido" >
             <div className="item-name">
-                Desarollo Web React CDN 
+                <span>
+                    Desarollo Web React CDN 
+                </span>
             </div>
             <div className="grid-item item-log-in-out">
                 <div>
@@ -18,7 +20,6 @@ const Contenido = () =>(
             </div>
         </div>
 
-        <Route path="/home" exact component={Add} />
         <Route path="/add" exact component={Add} />
         <Route path="/edit" exact component={Edit} />
         <Route path="/get" exact component={Get} />    

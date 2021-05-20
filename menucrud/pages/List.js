@@ -26,7 +26,8 @@ class List extends React.Component{
     render(){
         return(
             <div>
-                <TituloPage titulo='Listado de la entidad' opcion='Entidad/listado' />
+                <TituloPage titulo='Listado de la entidad' 
+                opcion='Entidad/listado' icon="view_list" />
                 <div className="lista-box">
                     <ul>
                     {

@@ -86,6 +86,10 @@
   padding: 0 0 0 0.5rem;
   font-size: 8px;
 }
+.nav-lateral-der .header-contenido .item-name div {
+  display: flex;
+  align-items: center;
+}
 .nav-lateral-der .header-contenido .item-log-in-out {
   height: 2rem;
   display: grid;
@@ -107,6 +111,7 @@
   background-color: #f7fcf7;
   box-shadow: 0 13px 20px -17px #4c995849;
   font-size: 12px;
+  color: #2d4426;
 }
 
 .lista-box {
@@ -131,32 +136,48 @@
 }
 
 .titulo-contenido {
+  display: flex;
+  margin: 0 0.5rem 0 0.5rem;
   background-color: #e4fffe;
   padding: 10px 0 15px 5px;
   border-radius: 0 30px 0 30px;
+  box-shadow: 0 13px 8px -10px #4c995849;
 }
 .titulo-contenido .titulo-name {
+  width: 70%;
   font-family: "Roboto";
   font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.titulo-contenido .titulo-name span {
+  margin: 0 0 0 1.5rem;
 }
 .titulo-contenido .titulo-name h4 {
   font-size: 20px;
-  margin: 0 0 20px 10px;
+  margin: 0 0 0px 20px;
 }
 .titulo-contenido .titulo-ruta {
-  width: 300px;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  height: 5%;
   margin: 0 0 0 20px;
   padding: 6px 6px 6px 15px;
   font-size: 12px;
   border-radius: 20px 20px 20px 20px;
   background-color: #ccffe5;
   color: #00994c;
+  box-shadow: 0 13px 8px -10px #4c995849;
+}
+.titulo-contenido .titulo-ruta span {
+  margin: 0 1rem 0 0.3rem;
 }
 
 .form-contenido {
   background-color: #f9fffc;
-  margin: 15px 0 0 0;
-  padding: 15px 10px 15px 15px;
+  margin: 0.7rem 4rem 0 2rem;
+  padding: 0 10px 15px 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

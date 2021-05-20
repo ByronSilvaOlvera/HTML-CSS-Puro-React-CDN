@@ -18,7 +18,8 @@ class Add extends React.Component{
 
         return(
             <div>
-            <TituloPage titulo='Agregar una entidad' opcion='Entidad/agregar' />     
+            <TituloPage titulo='Agregar una entidad' 
+                    opcion='Entidad/agregar' icon='add_circle_outline' />     
             <FormEntidad />       
             </div>
         );
