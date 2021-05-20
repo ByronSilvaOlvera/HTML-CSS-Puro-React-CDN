@@ -88,7 +88,7 @@ class NavOpcion extends React.Component{
          this.state.divStyle =  !this.state.estado 
              ? {} 
              : { color : 'rgb(255, 255, 255)' } ;
-        console.log('estado');
+        
     }
 
     render(){
@@ -104,4 +104,5 @@ class NavOpcion extends React.Component{
             </div>        
         )
     }
+    
 }
