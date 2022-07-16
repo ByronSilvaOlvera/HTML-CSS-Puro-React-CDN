@@ -1,0 +1,29 @@
+
+.conte{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr );
+    grid-auto-flow: dense;
+    gap: 10px;
+}
+
+
+.conte > div {
+    border: 2px solid red;
+}
+.box{
+    border-radius: 18px;
+    /* width: 100px ; */
+    height: 100px;
+    padding: 1rem;
+    
+}   
+.box > div{
+    width: 100%;
+    height: 100%;
+} 
+
+.banner{
+    grid-column: span 4;
+    text-align: center;
+    font-size: 100px;
+}
