@@ -1,0 +1,5 @@
+git push 
+
+git pull
+git config --global user.email katy2022gb@github.com
+git config --global user.name katygarcia22
