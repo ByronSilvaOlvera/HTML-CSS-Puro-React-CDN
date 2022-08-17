@@ -1,36 +1,31 @@
 input{
     display: none;
-  )
-
-
-
-
-
-
-  
-
-  label (
+}
+label {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
   }
-  label :: before,
+  label::before,
   label::after {
     content: "";
     position: absolute;
-    top: 58%;
-    transform: translateY(-58%)
-    border-radius: 56%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
   }
-  label:: before {
+  label::before {
     left: 0;
-    width: 16px;
-    height: 18px;
+    width: 10px;
+    height: 10px;
     background-color: #7efefd;
   }
   label::after {
-    left: -Tpx;
+    left: -7px;
     width: 20px;
     height: 20px;
     border: 2px solid w#7efefd;
-    opacity: 8;
+    opacity: 0;
+ }
+
+ 
